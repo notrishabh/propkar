@@ -1,0 +1,189 @@
+html{
+  background-image: linear-gradient(rgb(92, 92, 202),lightblue);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+  margin: 0%;
+}
+
+/* -------------NAVBAR------------- */
+#btn1,#btn2,#btn3,#btn4 {
+    background-color: rgb(12, 141, 16);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: solid rgb(73, 60, 60);
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 0px 0px;
+    font-family: trebuchet;
+    font-size: 20px;
+  }
+
+  #btn1:hover,#btn2:hover,#btn3:hover,#btn4:hover{
+    background-color: rgb(93, 105, 212);
+    color: white;
+  }
+
+  #navbar
+  {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    min-width: 500px; 
+    
+  }
+
+/* ===========NAVBAR============ */
+
+
+/* ----------SLIDESHOW--------- */
+img{
+    width: 100%;
+    height: 500px;
+  }
+
+.slides{
+    display: none;
+}
+
+#slideshow{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    border: solid white;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.caption{
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slides {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+/* ========SLIDESHOW======== */
+
+  h1{
+      text-align: left;
+      color: rgb(23, 53, 35);
+      text-shadow: 2px 2px #5b9168;
+      font-size: 50px;
+      padding: 20px;
+  }
+
+  body
+  {
+    margin: -20px 0px 50px 0px;
+  }
+  #info
+  {
+    margin: 2% 20% 50px 20%;
+    text-align: justify;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 5px 5px grey;
+    font-size: 26px;
+  }
+
+  #upper
+  {
+    /* border-bottom: solid rgb(106, 96, 199); */
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    /* box-shadow: 2px 2px #6f75cc; */
+  }
+
+  #heading
+  {
+    background: #ffffff;
+    margin: auto;
+    padding: 0px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  #info h2{
+    font-size: 50px;
+  }
+
+/* -------Social Media Buttons------- */
+ .fa
+ {
+  position: relative;
+  padding: 10px 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  left: 80%;
+  bottom: 100px;
+ }
+ .fa:hover {
+  opacity: 0.7;
+}
+ .fa-facebook
+ {
+  background: #3B5998;
+  color: white;
+ }
+ .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+ .fa-google {
+  background: rgb(245, 73, 60);
+  color: white;
+}
+/* ======Social Media Buttons====== */
